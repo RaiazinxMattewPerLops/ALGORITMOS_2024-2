@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
  int main() {
     
@@ -11,12 +13,10 @@
     //CALCULO E IMPRESSÃO DAS NOTAS
     printf("NOTAS:\n");
     
-    /*facilitar calculos com numeros de ponto flutuante 
-    multiplicamos o valor monetário por 100 
-    para converter tudo para centavos*/
+    /*facilitar calculos com numeros de ponto flutuante multiplicamos o valor monetário por 100 para converter tudo para centavos*/
     
     int money = (int)(n * 100 + 0.5);
-    
+   
     nota = money/10000;
     printf("%d nota(s) de R$ 100.00\n", nota);
     money = money % 10000;
@@ -63,9 +63,8 @@
     moeda = money/5;
     printf("%d moeda(s) de R$ 0.05\n", moeda);
     money = money %5;
-    
+ 
     moeda= money/1;
     printf("%d moeda(s) de R$ 0.01\n", moeda);
-    
     return 0;
 }
